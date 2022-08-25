@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VAB Solutions | Careers</title>
+
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="./assets/favicon/android-chrome-192x192.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="512x512"
+            href="./assets/favicon/android-chrome-512x512.png"
+            type="image/png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/favicon/apple-touch-icon.png"
+            type="image/png"
+        />
+        <link rel="manifest" href="./manifest.webmanifest" />
+
+        <link rel="stylesheet" href="./css/careers.css" />
+
+        <script src="./js/hamburger.js" defer></script>
+        <script src="./js/careers.js" defer></script>
+    </head>
+    <body>
+        <header class="nav">
+            <img
+                class="nav__logo"
+                src="./assets/images/logo.png"
+                alt="VAB Solutions logo"
+            />
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav__link nav__link--active"
+                            href="./careers.html"
+                            >Careers</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav__link nav__link--btn" href="./resource-library.html"
+                >Resource library</a
+            >
+
+            <button
+                id="hamburger-button"
+                class="ham__btn"
+                aria-label="Hamburger button"
+            >
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+            </button>
+        </header>
+        <main>
+            <nav id="hamburger-menu" class="ham__menu">
+                <ul class="ham__list">
+                    <li><a class="ham__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="ham__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--active"
+                            href="./careers.html"
+                            >Careers</a
+                        >
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--btn"
+                            href="./resource-library.html"
+                            >Resource library</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <section class="hero">
+                <figure class="hero__fig">
+                    <img
+                        class="hero__img"
+                        src="./assets/images/careers/careers-hero-img.jpg"
+                        alt=""
+                    />
+                    <figcaption class="hero__figc">
+                        <h1 class="hero__heading">Join Us</h1>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="promise-form">
+                <article class="promise">
+                    <h2 class="promise__heading">Our Promise to You</h2>
+                    <ul class="promise__list">
+                        <li>You will be respected</li>
+                        <li>
+                            Your initiatives will be encouraged - we call this
+                            <i>"intrapreneurship"</i>
+                        </li>
+                        <li>
+                            Your career and professional development will be our
+                            top priorities
+                        </li>
+                        <li>
+                            You will be remunerated based on merit and
+                            performance
+                        </li>
+                        <li>
+                            You will constantly learn, no matter how experienced
+                            you are
+                        </li>
+                        <li>
+                            You will be treated equitably and without
+                            discrimination with respect to employment equity
+                        </li>
+                        <li>
+                            There's always room for you to grow at VAB Solutions
+                            - that is our commitment to you
+                        </li>
+                    </ul>
+                </article>
+                <form id="form" class="form" method="POST">
+                    <div class="form__input-wrapper">
+                        <label for="full-name" class="form__label"
+                            >Fullname</label
+                        >
+                        <input
+                            id="full-name"
+                            type="text"
+                            class="form__input"
+                            name="full-name"
+                            placeholder="Enter your fullname"
+                            required
+                        />
+                    </div>
+                    <div class="form__input-wrapper">
+                        <label for="email" class="form__label"
+                            >Email Address</label
+                        >
+                        <input
+                            id="email"
+                            type="email"
+                            class="form__input"
+                            name="email"
+                            placeholder="Email address"
+                            required
+                        />
+                    </div>
+                    <div class="form__input-wrapper">
+                        <label for="phone-number" class="form__label"
+                            >Phone Number</label
+                        >
+                        <input
+                            id="phone-number"
+                            type="text"
+                            class="form__input"
+                            name="phone-number"
+                            placeholder="Phone number"
+                            required
+                        />
+                    </div>
+                    <div class="form__input-wrapper">
+                        <label for="file-input" class="form__label"
+                            >Upload File</label
+                        >
+                        <label for="file-input" class="form__label--file-btn">
+                            Upload file
+                            <i class="fa fa-arrow-up-from-bracket"></i>
+                        </label>
+
+                        <input
+                            id="file-input"
+                            type="file"
+                            class="form__input form__input--file"
+                            name="file"
+                            required
+                        />
+                        <p>
+                            <output id="file-details" for="file-input"></output>
+                        </p>
+                    </div>
+                    <button class="form__btn" type="submit">Submit</button>
+                </form>
+            </section>
+            <dialog id="success-modal" class="success-modal">
+                <figure>
+                    <img src="./assets/images/tick-icon.jpg" alt="Tick icon" />
+                    <figcaption class="success-modal__figc">
+                        <h2 class="success-modal__heading">Message Sent!</h2>
+                        <p class="success-modal__p">
+                            Your message has been sent successfully. We'll be in
+                            touch with you shortly via email.
+                        </p>
+                    </figcaption>
+                </figure>
+            </dialog>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div>
+                    <h3 class="footer__heading">Contact Information</h3>
+
+                    <address class="footer__address">
+                        <div class="address-item">
+                            <i class="fa fa-phone"></i>
+                            <a class="footer__link" href="tel:01-4537620"
+                                >01-4537620</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:info@vabsolutionsint.com"
+                                >info@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:sales@vabsolutionsint.com"
+                                >sales@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-address-book"></i>
+                            <p>
+                                Plot 22, Idowu Taylor Street,
+                                <br />
+                                Victoria Island, Lagos
+                            </p>
+                        </div>
+                    </address>
+                </div>
+                <nav>
+                    <h3 class="footer__heading">Useful Links</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./solutions.html"
+                                    >Services & Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./careers.html"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./contact.html"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <nav>
+                    <h3 class="footer__heading">Services</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./sio.html"
+                                    >Strategic IT Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./sso.html"
+                                    >Strategic Security Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./ssat.html"
+                                    >Strategic Services & Asset Management</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <div class="footer__logo-wrapper">
+                    <img
+                        class="footer__logo"
+                        src="./assets/images/logo-footer.png"
+                        alt="VAB Solutions logo"
+                    />
+                    <hr class="footer__hr" />
+                    <nav>
+                        <ul class="socials__list">
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Twitter"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Instagram"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Facebook"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Linkedin"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div>
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Privacy Policy</a
+                    >
+                    |
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Cookie Preferences</a
+                    >
+                </div>
+                <p>&copy; Copyrights 2022 VAB Solutions.</p>
+            </div>
+        </footer>
+    </body>
+</html>

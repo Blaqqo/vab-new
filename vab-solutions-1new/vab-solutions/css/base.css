@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "AmpleSoft Pro";
+    src: local('AmpleSoft Pro'), url('../assets/fonts/FontsFree-Net-AmpleSoftPro.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AmpleSoft Pro";
+    src: local('AmpleSoft Pro'), url('../assets/fonts/FontsFree-Net-AmpleSoftProMedium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "AmpleSoft Pro";
+    src: local('AmpleSoft Pro'), url('../assets/fonts/AmpleSoftPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    --blue-primary: #00001E;
+    --red-secondary: #F02E2E;
+
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+html {
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'AmpleSoft Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--blue-primary);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,217 @@
+@import url('./base.css');
+@import url('./header.css');
+@import url('./hamburger.css');
+@import url('./footer.css');
+
+
+/* Hero section */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero {
+    margin: 10em calc(1em + 1.5625vw) 5em;
+}
+
+.hero__fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.hero__img-c {
+    max-width: 375px;
+}
+
+.hero__img {
+    animation: rotate 3s infinite linear;
+
+    border-radius: 50%;
+    width: 100%;
+}
+
+.hero__figc {
+    max-width: 725px;
+}
+
+.hero__heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.hero__heading::after {
+    content: '.';
+    color: var(--red-secondary);
+}
+
+.hero__text {
+    color: var(--red-secondary);
+    font-size: 1.25rem;
+}
+
+.clients__heading {
+    margin: 5em 0 1.5em;
+    font-size: 1.125rem;
+}
+
+.clients__heading::after {
+    content: '';
+
+    border-bottom: 3px solid var(--red-secondary);
+    display: block;
+    padding-top: .25em;
+    width: 40px;
+}
+
+.clients__list {
+    /* Creates a grid with a maximum of 4 columns */
+    --grid-layout-gap: 2em;
+    --grid-column-count: 4;
+    --grid-item--min-width: 100px;
+
+
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    align-items: center;
+    gap: var(--grid-layout-gap);
+}
+
+.line-design {
+    margin: 5em 0 2em;
+}
+
+@media (min-width: 700px) {
+    .hero__heading {
+        font-size: 3rem;
+    }
+
+    .hero__fig {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 7.5%;
+    }
+}
+
+/* Challenges section */
+
+.challenges__wrapper {
+    color: var(--black);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 5em calc(1em + 1.5625vw);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2em 5em;
+}
+
+.challenges__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.challenges__text {
+    margin: 1.25em 0;
+}
+
+.choose-us__item::before {
+    content: '\2022';
+    
+    color: var(--red-secondary);
+    font-weight: 700;
+    margin-right: .75em;
+}
+
+@media (min-width: 900px) {
+    .challenges__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .challenges__wrapper section {
+        flex: 1;
+    
+    }
+}
+
+/* About section */
+
+.about {
+    background: linear-gradient(124.05deg, #F02E2E 31.07%, rgba(18, 167, 244, 0.8) 90.68%);
+    color: var(--white);
+    font-size: calc(18 / 16 * 1rem);
+    padding: 1em;
+
+    margin: 6em calc(1em + 1.5625vw);
+}
+
+.about__fig {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2em;
+}
+
+.about__img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.about__figc {
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.about__heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.about__link-btn {
+    background: var(--red-secondary);
+    border-radius: .5em;
+    color: var(--white);
+    padding: .5em 1em;
+
+    display: block;
+    margin-top: 1.5em;
+    width: fit-content;
+}
+
+@media (min-width: 900px) {
+    .about__img {
+        max-width: none;
+        width: 40%;
+    }
+
+    .about__fig {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }  
+}
+
+
+/* General media queries styles */
+@media (min-width: 1250px) {
+    .hero,
+    .challenges__wrapper,
+    .about {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}

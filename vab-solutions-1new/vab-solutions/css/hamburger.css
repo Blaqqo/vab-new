@@ -1,0 +1,124 @@
+/* Hamburger button */
+.ham__btn {
+    flex-shrink: 0;
+
+    width: 35px;
+    height: 26.25px;
+    position: relative;
+
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.ham__btn--open .ham__bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.ham__btn--open .ham__bar:nth-child(2) {
+    width: 0;
+    opacity: 0;
+}
+
+.ham__btn--open .ham__bar:nth-child(3) {
+    width: 36px;
+    left: 8px;
+    transform: rotate(-45deg);
+}
+
+.ham__bar {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: var(--white);
+    border-radius: .75em;
+    left: 0;
+    transition: all .25s ease-in-out;
+}
+
+
+.ham__bar:nth-child(1) {
+    top: 0;
+    transform-origin: left center;
+}
+
+.ham__bar:nth-child(2) {
+    top: 11px;
+    transform-origin: left center;
+}
+
+.ham__bar:nth-child(3) {
+    top: 22px;
+    transform-origin: left center;
+}
+
+@media (min-width: 900px) {
+    .ham__btn {
+        display: none;
+    }
+}
+
+/* Hamburger menu */
+.ham__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    /* Added excessive value for translateX to prevent the menu from leaking onto the screen for small widths  */
+    transform: translateX(-200vw);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    text-align: center;
+    
+    background: var(--blue-primary);
+    font-size: 1.75rem;
+    overflow: scroll;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    display: grid;
+    align-content: center;
+    padding-top: 4em;
+}
+
+.ham__menu--show {
+    overflow: hidden;
+    transform: translateX(0);
+}
+
+.ham__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.ham__link {
+    color: var(--white);
+    padding-bottom: .5em;
+}
+
+.ham__link--btn {
+    background: var(--red-secondary);
+    border-radius: .5em;
+    display: block;
+
+    margin: 0 auto;
+    padding: .75em;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.ham__link--active {
+    border-bottom: 2.5px solid var(--red-secondary);
+}
+
+@media (min-width: 900px) {
+    .ham__menu {
+        display: none;
+    }
+}

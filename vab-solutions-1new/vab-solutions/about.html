@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VAB Solutions | About</title>
+
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="./assets/favicon/android-chrome-192x192.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="512x512"
+            href="./assets/favicon/android-chrome-512x512.png"
+            type="image/png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/favicon/apple-touch-icon.png"
+            type="image/png"
+        />
+        <link rel="manifest" href="./manifest.webmanifest" />
+
+        <link rel="stylesheet" href="./css/about.css" />
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+            defer
+        ></script>
+        <script src="./js/hamburger.js" defer></script>
+        <script src="./js/about-carousel.js" defer></script>
+    </head>
+    <body>
+        <header class="nav">
+            <img
+                class="nav__logo"
+                src="./assets/images/logo.png"
+                alt="VAB Solutions logo"
+            />
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a
+                            class="nav__link nav__link--active"
+                            href="./about.html"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav__link nav__link--btn" href="./resource-library.html"
+                >Resource library</a
+            >
+
+            <button
+                id="hamburger-button"
+                class="ham__btn"
+                aria-label="Hamburger button"
+            >
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+            </button>
+        </header>
+        <main>
+            <nav id="hamburger-menu" class="ham__menu">
+                <ul class="ham__list">
+                    <li><a class="ham__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--active"
+                            href="./about.html"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--btn"
+                            href="./resource-library.html"
+                            >Resource library</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="hero">
+                <figure class="hero__fig">
+                    <div class="hero__img-c">
+                        <img
+                            class="hero__img"
+                            src="./assets/images/about/hero.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <figcaption class="hero__figc">
+                        <header>
+                            <h1 class="hero__heading">
+                                Strategy is
+                                <br />
+                                our
+                                <br />
+                                core competence</h1>
+                            <p class="hero__h-text">
+                                Leading enterprises in West Africa trust us to
+                                advise on the key pain points and seek
+                                remediation to these pressing issues.
+                            </p>
+                        </header>
+                        <article class="vision">
+                            <h3 class="vision__heading">Our Vision</h3>
+                            <p>
+                                As a Value Added Business, our vision is to
+                                render high-quality services, low cost, easy to
+                                use products that incorporate high technology
+                                for our numerous clients.
+                            </p>
+                        </article>
+                        <article class="mission">
+                            <h3 class="mission__heading">Our Mission</h3>
+                            <p>
+                                As a Value Added Business, our mission is to add
+                                value over and above our clients new and
+                                existing IT Infrastructure & Security.
+                            </p>
+                        </article>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="slogans">
+                <article class="slogan">
+                    <h2 class="slogan__heading">People</h2>
+                    <p>
+                        The team is made up of experts with vast knowledge
+                        across the different IT domain. We are certified by the
+                        leading vendors in the ecosystem.
+                    </p>
+                </article>
+                <article class="slogan">
+                    <h2 class="slogan__heading">Process</h2>
+                    <p>
+                        Our processes helps any organization in order to make
+                        sure, if capable enough to meeting day to day IT
+                        challenges, encompassing a wide spectrons of IT enabling
+                        services ranging from strategy and IT framework to IT
+                        process, risk analysis, security compliance and change
+                        management.
+                    </p>
+                </article>
+                <article class="slogan">
+                    <h2 class="slogan__heading">Technology</h2>
+                    <p>
+                        We are an independent consultant as such have access to
+                        a broader range of product, meaning you get the solution
+                        that works and fits your best needs.
+                    </p>
+                </article>
+            </section>
+
+            <section class="team">
+                <h2 class="team__heading">Our Team</h2>
+
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure>
+                                <div class="teammate__img-c">
+                                    <img
+                                        class="teammate__img"
+                                        src="./assets/images/about/team-member1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <figcaption class="teammate__figc">
+                                    <h3>Agadagba Benjamin</h3>
+                                    <p class="teammate__role">Managing Consultant</p>
+                                    <p>
+                                        Leads the business with a focus on strategy,
+                                        service and assisting customers analyze their
+                                        processes in place to determine how to make
+                                        those processes more effective.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <div class="teammate__img-c">
+                                    <img
+                                        class="teammate__img"
+                                        src="./assets/images/about/team-member2.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <figcaption class="teammate__figc">
+                                    <h3>Chiamaka Sharon-Rose</h3>
+                                    <p class="teammate__role">
+                                        Head of Technical Services
+                                    </p>
+                                    <p>
+                                        Leads the technical team of the company while
+                                        also Reponsible for pre and post sales technical
+                                        support.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <div class="teammate__img-c">
+                                    <img
+                                        class="teammate__img"
+                                        src="./assets/images/about/team-member3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <figcaption class="teammate__figc">
+                                    <h3>Joy Amaran</h3>
+                                    <p class="teammate__role">
+                                        Business Development Executive
+                                    </p>
+                                    <p>
+                                        Responsible for the development and delivery of
+                                        strategic growth plan with particular focus on
+                                        sales, marketing and key partnership.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <div class="teammate__img-c">
+                                    <img
+                                        class="teammate__img"
+                                        src="./assets/images/about/team-member1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <figcaption class="teammate__figc">
+                                    <h3>Pascal Anowi</h3>
+                                    <p class="teammate__role">Systems Engineer</p>
+                                    <p>
+                                        Provides technical support and takes care of
+                                        product installations.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <div class="teammate__img-c">
+                                    <img
+                                        class="teammate__img"
+                                        src="./assets/images/about/team-member2.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <figcaption class="teammate__figc">
+                                    <h3>Jubril Etamesor</h3>
+                                    <p class="teammate__role">Systems Engineer</p>
+                                    <p>
+                                        Provides technical support and takes care of
+                                        product installations.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+            </section>
+            <section class="process">
+                <figure class="process__fig">
+                    <figcaption class="process__figc">
+                        <h2 class="process__heading">Our Process</h2>
+                        <div class="process__content">
+                            <div>
+                                <p>
+                                    Choosing the right software is crucial, but
+                                    choosing the right people to work with is
+                                    equally important.
+                                </p>
+                                <p>
+                                    Critical factors in ensuring that our
+                                    cutomers and their budget is properly
+                                    utilized, we typically activate certain
+                                    factors such as an end to end transparency,
+                                    our core methodology, product agnostic and
+                                    lastly our white-glove service.
+                                </p>
+                            </div>
+                            <ul class="process__list">
+                                <li>Impact - Define problem</li>
+                                <li>
+                                    Disaggregation & early hypotheis - Structure
+                                    problem
+                                </li>
+                                <li>Speed - Prioritize issues</li>
+                                <li>
+                                    Efficiency - Develop issues analysis and
+                                    analysis plan
+                                </li>
+                                <li>Evidence - Conduct analysis</li>
+                                <li>So what - Synthesize findings</li>
+                                <li>Next iteration - Develop recommendation</li>
+                                <li>Potential solution</li>
+                            </ul>
+                        </div>
+                    </figcaption>
+                    <img
+                        class="process__img"
+                        src="./assets/images/about/horizontal-divider-with-text.png"
+                        alt=""
+                    />
+                </figure>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div>
+                    <h3 class="footer__heading">Contact Information</h3>
+
+                    <address class="footer__address">
+                        <div class="address-item">
+                            <i class="fa fa-phone"></i>
+                            <a class="footer__link" href="tel:01-4537620"
+                                >01-4537620</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:info@vabsolutionsint.com"
+                                >info@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:sales@vabsolutionsint.com"
+                                >sales@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-address-book"></i>
+                            <p>
+                                Plot 22, Idowu Taylor Street,
+                                <br />
+                                Victoria Island, Lagos
+                            </p>
+                        </div>
+                    </address>
+                </div>
+                <nav>
+                    <h3 class="footer__heading">Useful Links</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./solutions.html"
+                                    >Services & Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./careers.html"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./contact.html"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <nav>
+                    <h3 class="footer__heading">Services</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./sio.html"
+                                    >Strategic IT Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./sso.html"
+                                    >Strategic Security Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./ssat.html"
+                                    >Strategic Services & Asset Management</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <div class="footer__logo-wrapper">
+                    <img
+                        class="footer__logo"
+                        src="./assets/images/logo-footer.png"
+                        alt="VAB Solutions logo"
+                    />
+                    <hr class="footer__hr" />
+                    <nav>
+                        <ul class="socials__list">
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Twitter"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Instagram"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Facebook"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Linkedin"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div>
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Privacy Policy</a
+                    >
+                    |
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Cookie Preferences</a
+                    >
+                </div>
+                <p>&copy; Copyrights 2022 VAB Solutions.</p>
+            </div>
+        </footer>
+    </body>
+</html>

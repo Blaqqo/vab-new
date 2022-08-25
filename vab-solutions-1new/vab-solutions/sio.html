@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VAB Solutions | SIO</title>
+
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="./assets/favicon/android-chrome-192x192.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="512x512"
+            href="./assets/favicon/android-chrome-512x512.png"
+            type="image/png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/favicon/apple-touch-icon.png"
+            type="image/png"
+        />
+        <link rel="manifest" href="./manifest.webmanifest" />
+
+        <link rel="stylesheet" href="./css/sio.css" />
+
+        <script src="./js/hamburger.js" defer></script>
+    </head>
+    <body>
+        <header class="nav">
+            <img
+                class="nav__logo"
+                src="./assets/images/logo.png"
+                alt="VAB Solutions logo"
+            />
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav__link nav__link--active"
+                            href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav__link nav__link--btn" href="./resource-library.html"
+                >Resource library</a
+            >
+
+            <button
+                id="hamburger-button"
+                class="ham__btn"
+                aria-label="Hamburger button"
+            >
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+            </button>
+        </header>
+        <main>
+            <nav id="hamburger-menu" class="ham__menu">
+                <ul class="ham__list">
+                    <li><a class="ham__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="ham__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--active"
+                            href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--btn"
+                            href="./resource-library.html"
+                            >Resource library</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <section class="intro">
+                <figure class="intro__fig">
+                    <div class="intro__img-c">
+                        <img
+                            class="intro__img"
+                            src="./assets/images/sio/sio-intro-img.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <figcaption class="intro__figc">
+                        <header>
+                            <h1 class="intro__heading">
+                                Solutions:<br class="intro__br" />
+                                Strategic IT Operations</h1>
+                        </header>
+                        <p class="intro__text">
+                            Organizations that look to the future set themselves
+                            apart with a three-pronged agile approach of IT
+                            operations that stay ahead of the disruption curve,
+                            sustained innovation that drives future growth and
+                            an enterprise culture that places the customer at
+                            the center and prepares their people to be ready for
+                            the next
+                        </p>
+                        <ul class="intro__list">
+                            <li>
+                                Reduce costs and redirect savings to
+                                higher-value activities
+                            </li>
+                            <li>Identify and mitigate business risks</li>
+                            <li>
+                                Collaborate in new and more effective ways with
+                                customers and suppliers
+                            </li>
+                            <li>
+                                Meet enterprise objectives for driving and
+                                achieving profitable growth
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="partners">
+                <figure>
+                    <figcaption class="partners__figc">
+                        Technology Partners
+                    </figcaption>
+                    <div class="partners__list">
+                        <img
+                            src="./assets/images/solutions/solarwinds-logo.png"
+                            alt="Solarwinds logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/rubrik-logo.png"
+                            alt="Rubrik logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/redhat-logo.png"
+                            alt="Red hat logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/microsoft-logo.png"
+                            alt="Microsoft logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/dell-emc-logo.png"
+                            alt="Dell EMC logo"
+                        />
+                        <img
+                            src="./assets/images/sio/eg-innovations.png"
+                            alt="EG Innovations logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/vmware-logo.png"
+                            alt="VM Ware logo"
+                        />
+                    </div>
+                </figure>
+            </section>
+            <img
+                class="line-design"
+                src="./assets/images/horizontal-divider.jpg"
+                alt=""
+            />
+            <section class="solution">
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Network Operations <br class="solution__br" />
+                        and Performance Management
+                    </h2>
+                    <p class="solution__p">
+                        Network operations and performance management can be
+                        complex, but managing and monitoring your network can be
+                        simple and automated as our mission is to make IT look
+                        easy.
+                    </p>
+                    <p class="solution__p">
+                        We've assisted customers master their network
+                        management. They've made us #1 by telling us exactly
+                        what problem they want solved, and how they want it
+                        solved, and that's what we deliver.
+                    </p>
+                    <p class="solution__p">
+                        We believe in simplicity that scales to meet your needs
+                        today, and where you're going tomorrow. How we make
+                        network monitoring and management look easy:
+                    </p>
+                    <ul class="solution__list">
+                        <li>
+                            End-to-end visibility into hybrid IT infrastructure
+                        </li>
+                        <li>
+                            Delivery health of cloud services with hop-by-hop
+                            path analysis
+                        </li>
+                        <li>Auto-generated dependency mapping</li>
+                        <li>Dynamic config baselining and automatic backups</li>
+                        <li>
+                            Help ensure config compliance with regulatory
+                            standards
+                        </li>
+                        <li>Capacity forecasting and EOS/EOL tracking</li>
+                    </ul>
+                </div>
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        IT Infrastructure <br class="solution__br" />
+                        Management
+                    </h2>
+                    <p class="solution__p">
+                        Delivering critical business services today requires
+                        infrastructure (server, storage, and network) and
+                        applications that reside on-premises, in the cloud, or
+                        in a hybrid IT environment. But regardless of where the
+                        equipment sits and who owns it, end users expect a
+                        seamless experience, and rely on you—the IT
+                        professional—to help ensure performance and
+                        availability.
+                    </p>
+                    <p class="solution__p">
+                        Customers need a vendor-agnostic solution that can
+                        monitor across your IT infrastructure, whether it be
+                        on-premises, in the cloud, or a combination. Our
+                        infrastructure solutions help organizations assure the
+                        health and configuration of physical and virtual
+                        servers, containers, private cloud, storage, and network
+                        infrastructure across hybrid IT environments.
+                    </p>
+                    <p class="solution__p">
+                        Monitor physical and virtualized server health, perform
+                        server capacity planning, and manage server asset
+                        inventory Isolate storage I/O hotspots to help identify
+                        what's causing a problem before it affects your solution
+                        Troubleshoot networks to reduce outages and quickly
+                        detect, investigate, and remediate network performance
+                        issues, Know who and what is connected to your network
+                    </p>
+                </div>
+            </section>
+            <img
+                class="line-design"
+                src="./assets/images/horizontal-divider-reverse.jpg"
+                alt=""
+            />
+            <section class="solution">
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        IT <br class="solution__br" />
+                        Automation
+                    </h2>
+                    <p class="solution__p">
+                        Every business is a digital business. Digital business
+                        is essentially software, which means that organizations
+                        that expect to thrive in a digital environment must have
+                        an improved competence in software delivery Technology
+                        is your innovation engine, and delivering your
+                        applications faster helps you win.
+                    </p>
+                    <p class="solution__p">
+                        Historically, that required a lot of manual effort and
+                        complicated coordination. But today, our solution is
+                        here to reduce those manual processes, the simple, yet
+                        powerful IT automation engine that thousands of
+                        companies are using to drive complexity out of their
+                        environments and accelerate DevOps initiatives.
+                    </p>
+                    <ul class="solution__list">
+                        <li>Save time and be more productive</li>
+                        <li>Eliminate repetitive tasks</li>
+                        <li>Fewer mistakes & errors</li>
+                        <li>Improve collaboration and job satisfaction</li>
+                        <li>Overcome complexity</li>
+                        <li>More resources for innovation</li>
+                        <li>Increase accountability and compliance</li>
+                    </ul>
+                </div>
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Disaster Recovery & IT <br class="solution__br" />
+                        Resiliency Strategy
+                    </h2>
+                    <p class="solution__p">
+                        Data Protection and Application Resiliency (DPAR).
+                        Disaster Recovery & IT Resiliency focus on the IT
+                        technical aspects of recovery and resiliency, along with
+                        the process and procedures necessary to sustain these
+                        capabilities over time. This practice ensures that the
+                        services, systems and data necessary to support the
+                        business will be available whenever required.
+                    </p>
+
+                    <p class="solution__p">
+                        The global Covid 19 pandemic, rash of ransomware
+                        attacks, and greater natural disasters caused by climate
+                        change are the most recent challenges to hit businesses;
+                        this on top of the traditional causes of outages like
+                        operational errors and hardware, site, network and power
+                        failures.
+                    </p>
+
+                    <p class="solution__p">
+                        The rapid emergence and adoption of cloud computing,
+                        combined with traditional computing, presents both new
+                        challenges and new opportunities for enabling recovery
+                        and resiliency capabilities. The relative newness of
+                        cloud means that new technologies, skills, processes and
+                        techniques are needed to maintain or enhance
+                        capabilities. Our experience in both traditional data
+                        centre and cloud-based recovery and resiliency will
+                        ensure you are ready to address the old and new threats
+                        IT and the business face, in an effective, practical,
+                        cost efficient and continual manner.
+                    </p>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="contact__text">
+                    <h2 class="contact__heading">
+                        Want to know more about how we can help your business?
+                    </h2>
+                    <address class="contact__address">
+                        Send an email to
+                        <a
+                            class="contact__link"
+                            href="mailto:info@vabsolutionsint.com"
+                            >info@vabsolutionsint.com</a
+                        >
+                        or call us on
+                        <a class="contact__link" href="tel:01-4537620"
+                            >01-4537620</a
+                        >
+                    </address>
+                </div>
+            </section>
+            <section class="clients">
+                <p class="clients__heading">Our clients include:</p>
+
+                <div class="clients__list">
+                    <img
+                        src="./assets/images/home/access-bank-logo.png"
+                        alt="Access Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/stanbic-ibtc-logo.png"
+                        alt="Stanbic IBTC logo"
+                    />
+                    <img
+                        src="./assets/images/home/etranzact-logo.png"
+                        alt="eTranzact logo"
+                    />
+                    <img
+                        src="./assets/images/home/mtn-logo.png"
+                        alt="MTN logo"
+                    />
+                    <img
+                        src="./assets/images/home/providus-bank-logo.png"
+                        alt="Providus Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/heritage-bank-logo.png"
+                        alt="Heritage Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/seepco-logo.png"
+                        alt="Seepco logo"
+                    />
+                    <img
+                        src="./assets/images/home/polaris-bank-logo.png"
+                        alt="Polaris Bank logo"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div>
+                    <h3 class="footer__heading">Contact Information</h3>
+
+                    <address class="footer__address">
+                        <div class="address-item">
+                            <i class="fa fa-phone"></i>
+                            <a class="footer__link" href="tel:01-4537620"
+                                >01-4537620</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:info@vabsolutionsint.com"
+                                >info@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:sales@vabsolutionsint.com"
+                                >sales@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-address-book"></i>
+                            <p>
+                                Plot 22, Idowu Taylor Street,
+                                <br />
+                                Victoria Island, Lagos
+                            </p>
+                        </div>
+                    </address>
+                </div>
+                <nav>
+                    <h3 class="footer__heading">Useful Links</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./solutions.html"
+                                    >Services & Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./careers.html"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./contact.html"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <nav>
+                    <h3 class="footer__heading">Services</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./sio.html"
+                                    >Strategic IT Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./sso.html"
+                                    >Strategic Security Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./ssat.html"
+                                    >Strategic Services & Asset Management</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <div class="footer__logo-wrapper">
+                    <img
+                        class="footer__logo"
+                        src="./assets/images/logo-footer.png"
+                        alt="VAB Solutions logo"
+                    />
+                    <hr class="footer__hr" />
+                    <nav>
+                        <ul class="socials__list">
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Twitter"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Instagram"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Facebook"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Linkedin"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div>
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Privacy Policy</a
+                    >
+                    |
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Cookie Preferences</a
+                    >
+                </div>
+                <p>&copy; Copyrights 2022 VAB Solutions.</p>
+            </div>
+        </footer>
+    </body>
+</html>

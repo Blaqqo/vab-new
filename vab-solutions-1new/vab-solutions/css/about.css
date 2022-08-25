@@ -1,0 +1,191 @@
+    @import url('./base.css');
+    @import url('./header.css');
+    @import url('./hamburger.css');
+    @import url('./about-carousel.css');
+    @import url('./footer.css');
+
+
+/* Hero section */
+.hero {
+    margin: 10em calc(1em + 1.5625vw) 4em;
+}
+
+.hero__fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.hero__img-c {
+    max-width: 400px;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.hero__figc {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.hero__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .25em;
+}
+
+.hero__heading::after {
+    content: '.';
+    color: var(--red-secondary);
+}
+
+.hero__h-text {
+    color: var(--red-secondary);
+}
+
+.vision,
+.mission {
+    border: 1px solid rgba(0, 0, 30, 0.3);
+    border-left: 15px solid var(--red-secondary);
+
+    margin: 1em 0;
+    padding: .5em 1em;
+}
+
+.vision__heading,
+.mission__heading {
+    font-weight: 700;
+    margin-bottom: .25em;
+    text-transform: none;
+}
+
+@media (min-width: 800px) {
+    .hero__fig {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .hero__img-c {
+        min-width: 250px;
+        max-width: none;
+    }
+}
+
+/* Slogan section */
+.slogans {
+    margin: 8em calc(1em + 1.5625vw);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.slogan {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 2.5em 1em;
+}
+
+.slogan__heading {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.slogan:nth-child(2) {
+    background: linear-gradient(124.05deg, #F02E2E 31.07%, rgba(18, 167, 244, 0.8) 90.68%);
+    box-shadow: 5px 5px 30px 8px rgba(0, 0, 30, 0.1);
+    color: var(--white);
+}
+
+.slogan__heading {
+    text-align: center;
+}
+
+/* Team section */
+.team {
+    margin: 3em calc(1em + 1.5625vw);
+}
+
+.team__heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.teammate__img-c {
+    height: 300px;
+    width: 100%;
+}
+
+.teammate__img {
+    background: linear-gradient(124.05deg, #F02E2E 31.07%, rgba(18, 167, 244, 0.8) 90.68%);
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.teammate__figc {
+    font-size: 1.125rem;
+    padding: 1em 0;
+    padding-right: 2em;
+}
+
+.teammate__role {
+    color: var(--red-secondary);
+    margin: .75em 0;
+}
+
+
+
+/* Process section */
+.process {
+    margin: 4em calc(1em + 1.5625vw) 8em;
+}
+
+.process__content {
+    font-size: 1.125rem;
+
+    display: grid;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.process__heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.process__list {
+    color: var(--red-secondary);
+    list-style: disc inside;
+}
+
+.process__img {
+    margin: 3.5em 0 7em;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .process__content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    }
+}
+
+
+/* General media queries styles */
+@media (min-width: 1250px) {
+    .hero,
+    .slogans,
+    .team,
+    .process {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}

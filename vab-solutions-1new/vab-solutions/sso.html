@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VAB Solutions | SSO</title>
+
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="./assets/favicon/android-chrome-192x192.png"
+            type="image/png"
+        />
+        <link
+            rel="icon"
+            sizes="512x512"
+            href="./assets/favicon/android-chrome-512x512.png"
+            type="image/png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="./assets/favicon/apple-touch-icon.png"
+            type="image/png"
+        />
+        <link rel="manifest" href="./manifest.webmanifest" />
+
+        <link rel="stylesheet" href="./css/sso.css" />
+
+        <script src="./js/hamburger.js" defer></script>
+    </head>
+    <body>
+        <header class="nav">
+            <img
+                class="nav__logo"
+                src="./assets/images/logo.png"
+                alt="VAB Solutions logo"
+            />
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="nav__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a
+                            class="nav__link nav__link--active"
+                            href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav__link nav__link--btn" href="./resource-library.html"
+                >Resource library</a
+            >
+
+            <button
+                id="hamburger-button"
+                class="ham__btn"
+                aria-label="Hamburger button"
+            >
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+                <span class="ham__bar"></span>
+            </button>
+        </header>
+        <main>
+            <nav id="hamburger-menu" class="ham__menu">
+                <ul class="ham__list">
+                    <li><a class="ham__link" href="./index.html">Home</a></li>
+                    <li>
+                        <a class="ham__link" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--active"
+                            href="./solutions.html"
+                            >Services & Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./careers.html">Careers</a>
+                    </li>
+                    <li>
+                        <a class="ham__link" href="./contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="ham__link ham__link--btn"
+                            href="./resource-library.html"
+                            >Resource library</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <section class="intro">
+                <figure class="intro__fig">
+                    <div class="intro__img-c">
+                        <img
+                            class="intro__img"
+                            src="./assets/images/sso/sso-intro-img.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <figcaption class="intro__figc">
+                        <header>
+                            <h1 class="intro__heading">
+                                Solutions:<br class="intro__br" />
+                                Strategic <br class="intro__br" />
+                                Security Operations</h1>
+                        </header>
+                        <p class="intro__p">
+                            An organization core business integrity and client
+                            protections are critical, and the value and
+                            importance of information security in organizations
+                            make this a priority. All organizations need
+                            protection against cyber attacks and security
+                            threats, and investing in those protections is
+                            important.
+                        </p>
+                        <p class="intro__p">
+                            Security isn't black and white. It isn't a choice
+                            between full security and no security. It's a
+                            continuum with a lot of gray in between.
+                        </p>
+                        <p class="intro__p">
+                            At VAB Solutions our focus is on Usable security
+                            comes down to a single feeling: TRUST
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="partners">
+                <figure>
+                    <figcaption class="partners__figc">
+                        Technology Partners
+                    </figcaption>
+                    <div class="partners__list">
+                        <img
+                            src="./assets/images/solutions/ivanti-logo.png"
+                            alt="Ivanti logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/pulse-secure-logo.png"
+                            alt="Pulse Secure logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/fortinet-logo.png"
+                            alt="Fortinet logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/siemplify-logo.png"
+                            alt="Siemplify logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/imperva-logo.png"
+                            alt="Imperva logo"
+                        />
+                        <img
+                            src="./assets/images/solutions/algosec-logo.png"
+                            alt="Algosec logo"
+                        />
+                    </div>
+                </figure>
+            </section>
+            <img
+                class="line-design"
+                src="./assets/images/horizontal-divider.jpg"
+                alt=""
+            />
+            <section class="solution">
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Siem & user behaviour <br class="solution__br" />
+                        analytics
+                    </h2>
+                    <p class="solution__p">
+                        Alert hypervigilance has been the status quo for far too
+                        long, until now. Our solution has shifted the paradigm,
+                        focusing on applying context to a threat-centric
+                        approach. Enabling you to focus on what is important
+                        instead of drowning in analysis.
+                    </p>
+                </div>
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Network Access <br class="solution__br" />
+                        Control
+                    </h2>
+                    <p class="solution__p">
+                        Endpoints are continously targeted by attackers to go
+                        further access into the network and it's resources
+                        obsolete and unpatched systems with know a
+                        vulnerabilities makes an atteacker job easy. Our
+                        solution lets organization see exactly what endpoint
+                        connect to the network and ensure their security posture
+                        is compliant, limiting unauthorized access, plus easing
+                        the auditing burden.
+                    </p>
+                </div>
+            </section>
+            <img
+                class="line-design"
+                src="./assets/images/horizontal-divider-reverse.jpg"
+                alt=""
+            />
+            <section class="solution">
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Network Firewall and <br class="solution__br" />
+                        Security Policy Management
+                    </h2>
+                    <p class="solution__p">
+                        With end to end network security change automation for
+                        all related elements in cloud and on premise, our
+                        solution delivers risk analysis and automated compliance
+                        report to ensure enforcement of company and regulating
+                        policies and provide proactive detection of
+                        misconfiguration in the cloud.
+                    </p>
+                </div>
+                <div class="solution__column">
+                    <h2 class="solution__heading">
+                        Vulnerability <br class="solution__br" />
+                        Assessment and Management
+                    </h2>
+                    <p class="solution__p">
+                        Manually managing software wulnerability and updates can
+                        drain on IT resource with compliance madate galore and
+                        third party apps rife with vulnerabilities,
+                        comprehensive vulnerability assessment and management is
+                        a must.
+                    </p>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="contact__text">
+                    <h2 class="contact__heading">
+                        Want to know more about how we can help your business?
+                    </h2>
+                    <address class="contact__address">
+                        Send an email to
+                        <a
+                            class="contact__link"
+                            href="mailto:info@vabsolutionsint.com"
+                            >info@vabsolutionsint.com</a
+                        >
+                        or call us on
+                        <a class="contact__link" href="tel:01-4537620"
+                            >01-4537620</a
+                        >
+                    </address>
+                </div>
+            </section>
+            <section class="clients">
+                <p class="clients__heading">Our clients include:</p>
+
+                <div class="clients__list">
+                    <img
+                        src="./assets/images/home/access-bank-logo.png"
+                        alt="Access Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/stanbic-ibtc-logo.png"
+                        alt="Stanbic IBTC logo"
+                    />
+                    <img
+                        src="./assets/images/home/etranzact-logo.png"
+                        alt="eTranzact logo"
+                    />
+                    <img
+                        src="./assets/images/home/mtn-logo.png"
+                        alt="MTN logo"
+                    />
+                    <img
+                        src="./assets/images/home/providus-bank-logo.png"
+                        alt="Providus Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/heritage-bank-logo.png"
+                        alt="Heritage Bank logo"
+                    />
+                    <img
+                        src="./assets/images/home/seepco-logo.png"
+                        alt="Seepco logo"
+                    />
+                    <img
+                        src="./assets/images/home/polaris-bank-logo.png"
+                        alt="Polaris Bank logo"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div>
+                    <h3 class="footer__heading">Contact Information</h3>
+
+                    <address class="footer__address">
+                        <div class="address-item">
+                            <i class="fa fa-phone"></i>
+                            <a class="footer__link" href="tel:01-4537620"
+                                >01-4537620</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:info@vabsolutionsint.com"
+                                >info@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-envelope"></i>
+                            <a
+                                class="footer__link"
+                                href="mailto:sales@vabsolutionsint.com"
+                                >sales@vabsolutionsint.com</a
+                            >
+                        </div>
+                        <div class="address-item">
+                            <i class="far fa-address-book"></i>
+                            <p>
+                                Plot 22, Idowu Taylor Street,
+                                <br />
+                                Victoria Island, Lagos
+                            </p>
+                        </div>
+                    </address>
+                </div>
+                <nav>
+                    <h3 class="footer__heading">Useful Links</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./solutions.html"
+                                    >Services & Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./careers.html"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./contact.html"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <nav>
+                    <h3 class="footer__heading">Services</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="footer__link" href="./sio.html"
+                                    >Strategic IT Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./sso.html"
+                                    >Strategic Security Operations</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__link" href="./ssat.html"
+                                    >Strategic Services & Asset Management</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <div class="footer__logo-wrapper">
+                    <img
+                        class="footer__logo"
+                        src="./assets/images/logo-footer.png"
+                        alt="VAB Solutions logo"
+                    />
+                    <hr class="footer__hr" />
+                    <nav>
+                        <ul class="socials__list">
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Twitter"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Instagram"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Facebook"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="socials__link"
+                                    href="#"
+                                    target="_blank"
+                                    title="Linkedin"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div>
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Privacy Policy</a
+                    >
+                    |
+                    <a class="footer__link footer__link--bottom" href="#"
+                        >Cookie Preferences</a
+                    >
+                </div>
+                <p>&copy; Copyrights 2022 VAB Solutions.</p>
+            </div>
+        </footer>
+    </body>
+</html>
